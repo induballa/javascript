@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>document</title>
+        <script>
+            function printdocument(){
+            var inputTextRef= document.getElementById ('textInput')
+            var inputPasswordRef=document.getElementById('passwordinput')
+            var inputMobileRef=document.getElementById('mobile')
+            var inputEmailRef=document.getElementById('email')
+           var h2Reference=document.getElementById('h2Ref')
+
+            var textInputvalue=inputTextRef.value
+            var passwordInputvalue=inputPasswordRef.value
+            var mobileInputvalue=inputMobileRef.value
+            var emailInputvalue=inputEmailRef.value
+                h2Reference.innerText="forms"
+
+
+                var info={
+                    name:textInputvalue,
+                    password:passwordInputvalue,
+                    number:mobileInputvalue,
+                    email:emailInputvalue
+                }
+                console.log(info)
+
+
+
+            
+            
+           // console.log(textInputvalue)
+           // console.log(passwordInputvalue)
+           // console.log(mobileInputvalue)
+           // console.log(emailInputvalue)
+           
+            
+           
+            }
+        </script>
+    </head>
+    <body>
+        <div style="text-align:center; margin-top:100px;">
+        <h2 id="h2Ref">login form</h2>
+        <div>
+            <input type="text" placeholder="username" id="textInput"/> 
+        </div><br>
+        <div>
+            <input type="password" placeholder="password" id="passwordinput"/> 
+        </div><br>
+        <div>
+            <input type="phone number" placeholder="phone number"id="mobile"/> 
+        </div><br>
+        <div>
+            <input type="email" placeholder="email" id="email"/> 
+        </div><br>
+        <div>
+            <input type="button" value="login" onclick="printdocument()"/> 
+        </div><br>
+        
+    </body>
+</html>
